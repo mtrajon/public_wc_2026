@@ -388,10 +388,15 @@
     }
   },
   "g21": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Joao Neves",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
