@@ -305,6 +305,7 @@
       <button onclick="exportScores()">⬇ Export Scores</button>
       <input type="file" id="importFile" style="display:none" onchange="importScores(event)" />
       <button onclick="document.getElementById('importFile').click()">⬆ Import Scores</button>
+      <button onclick="loadSharedScores()">🌐 Load Latest Scores</button>
     </div>
   </div>
 
@@ -3464,6 +3465,29 @@ function importScores(event) {
   reader.readAsText(file);
   event.target.value = '';
 }
+
+async function loadSharedScores() {
+  try {
+    const res = await fetch('https://raw.githubusercontent.com/mtrajon/public_wc_2026/main/scores.json');
+    const data = await res.json();
+
+    if (typeof data !== 'object') {
+      alert('❌ Invalid scores format');
+      return;
+    }
+
+    scores = data;
+
+    saveState();
+    render();
+
+    alert('✅ Loaded latest shared scores');
+  } catch (err) {
+    console.error(err);
+    alert('❌ Failed to load shared scores');
+  }
+}
+
 
 //render();
 </script>
