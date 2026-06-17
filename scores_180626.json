@@ -1,0 +1,1062 @@
+{
+  "g1": {
+    "home": "2",
+    "away": "0",
+    "scorers": {
+      "home": [
+        {
+          "name": "Julián Quiñones",
+          "goals": 1
+        },
+        {
+          "name": "Raúl Jiménez",
+          "goals": 1
+        }
+      ],
+      "away": []
+    }
+  },
+  "g2": {
+    "home": "2",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Oh Hyeon-gyu",
+          "goals": 1
+        },
+        {
+          "name": "Hwang In-beom",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Ladislav Krejčí",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g3": {
+    "home": "1",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Cyle Larin",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Jovo Lukic",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g4": {
+    "home": "4",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Gio Reyna",
+          "goals": 1
+        },
+        {
+          "name": "Folarin Balogun",
+          "goals": 2
+        }
+      ],
+      "away": [
+        {
+          "name": "Mauricio",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g5": {
+    "home": "1",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Miro Muheim",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Breel Embolo",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g6": {
+    "home": "1",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Vinícius Júnior",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Ismael Saibari",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g7": {
+    "home": "0",
+    "away": "1",
+    "scorers": {
+      "home": [],
+      "away": [
+        {
+          "name": "John McGinn",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g8": {
+    "home": "2",
+    "away": "0",
+    "scorers": {
+      "home": [
+        {
+          "name": "Nestory Irankunda",
+          "goals": 1
+        },
+        {
+          "name": "Connor Metcalfe",
+          "goals": 1
+        }
+      ],
+      "away": []
+    }
+  },
+  "g9": {
+    "home": "7",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Kai Havertz",
+          "goals": 2
+        },
+        {
+          "name": "Jamal Musiala",
+          "goals": 1
+        },
+        {
+          "name": "Nathaniel Brown",
+          "goals": 1
+        },
+        {
+          "name": "Denis Undav",
+          "goals": 1
+        },
+        {
+          "name": "Felix Nmecha",
+          "goals": 1
+        },
+        {
+          "name": "Nico Schlotterbeck",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Livano Comenencia",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g10": {
+    "home": "2",
+    "away": "2",
+    "scorers": {
+      "home": [
+        {
+          "name": "Virgil van Dijk",
+          "goals": 1
+        },
+        {
+          "name": "Crysencio Summerville",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Daichi Kamada",
+          "goals": 1
+        },
+        {
+          "name": "Keito Nakamura",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g11": {
+    "home": "1",
+    "away": "0",
+    "scorers": {
+      "home": [
+        {
+          "name": "Amad Diallo",
+          "goals": 1
+        }
+      ],
+      "away": []
+    }
+  },
+  "g12": {
+    "home": "5",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Matias Svanberg",
+          "goals": 1
+        },
+        {
+          "name": "Viktor Gyökeres",
+          "goals": 1
+        },
+        {
+          "name": "Alexander Isak",
+          "goals": 1
+        },
+        {
+          "name": "Yasin Ayari",
+          "goals": 2
+        }
+      ],
+      "away": [
+        {
+          "name": "Omar Rekik",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g13": {
+    "home": "0",
+    "away": "0",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g14": {
+    "home": "1",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Mohamed Hany",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Emam Ashour",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g15": {
+    "home": "1",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Abdulelah Al-Amri",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Maximiliano Araújo",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g16": {
+    "home": "2",
+    "away": "2",
+    "scorers": {
+      "home": [
+        {
+          "name": "Ramin Rezaeian",
+          "goals": 1
+        },
+        {
+          "name": "Mohammad Mohebbi",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Elijah Just",
+          "goals": 2
+        }
+      ]
+    }
+  },
+  "g17": {
+    "home": "3",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Kylian Mbappé",
+          "goals": 2
+        }
+      ],
+      "away": []
+    }
+  },
+  "g18": {
+    "home": "1",
+    "away": "4",
+    "scorers": {
+      "home": [
+        {
+          "name": "Aymen Hussein",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Leo Østigård",
+          "goals": 1
+        },
+        {
+          "name": "Erling Haaland",
+          "goals": 2
+        }
+      ]
+    }
+  },
+  "g19": {
+    "home": "3",
+    "away": "0",
+    "scorers": {
+      "home": [
+        {
+          "name": "Lionel Messi",
+          "goals": 3
+        }
+      ],
+      "away": []
+    }
+  },
+  "g20": {
+    "home": "3",
+    "away": "1",
+    "scorers": {
+      "home": [
+        {
+          "name": "Marko Arnautović",
+          "goals": 1
+        },
+        {
+          "name": "Romano Schmid",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Ali Olwan",
+          "goals": 1
+        }
+      ]
+    }
+  },
+  "g21": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g22": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g23": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g24": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g25": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g26": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g27": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g28": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g29": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g30": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g31": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g32": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g33": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g34": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g35": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g36": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g37": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g38": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g39": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g40": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g41": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g42": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g43": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g44": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g45": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g46": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g47": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g48": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g49": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g50": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g51": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g52": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g53": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g54": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g55": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g56": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g57": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g58": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g59": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g60": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g61": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g62": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g63": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g64": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g65": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g66": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g67": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g68": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g69": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g70": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g71": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "g72": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m86": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m73": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m80": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m76": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m75": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m82": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m74": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m78": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m77": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m79": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m81": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m84": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m83": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m85": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m88": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m87": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m90": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m89": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m91": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m92": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m93": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m94": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m95": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m96": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m97": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m98": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m99": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m100": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m101": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m102": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m103": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  "m104": {
+    "home": "",
+    "away": "",
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  }
+}
