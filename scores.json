@@ -449,11 +449,25 @@
     }
   },
   "g24": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "2",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Abdukodir Khusanov",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Luis Díaz",
+          "goals": 1
+        },
+        {
+          "name": "Daniel Muñoz",
+          "goals": 1
+        }
+      ]
     }
   },
   "g25": {
