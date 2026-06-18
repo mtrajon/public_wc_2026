@@ -41,7 +41,7 @@ An all-in-one World Cup 2026 fixture tracker featuring match schedules, score in
 
 ## 🌐 Live Demo
 
-👉 [View App](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME)
+👉 [View App](https://mtrajon.github.io/public_wc_2026/)
 
 ---
 
