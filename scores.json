@@ -450,7 +450,7 @@
   },
   "g24": {
     "home": "1",
-    "away": "2",
+    "away": "3",
     "scorers": {
       "home": [
         {
@@ -465,6 +465,10 @@
         },
         {
           "name": "Daniel Muñoz",
+          "goals": 1
+        },
+        {
+          "name": "Jaminton Campaz",
           "goals": 1
         }
       ]
