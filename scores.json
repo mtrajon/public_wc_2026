@@ -475,11 +475,21 @@
     }
   },
   "g25": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Michal Sadílek",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Teboho Mokoena",
+          "goals": 1
+        }
+      ]
     }
   },
   "g26": {
