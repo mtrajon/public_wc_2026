@@ -436,10 +436,15 @@
     }
   },
   "g23": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Caleb Yirenkyi",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
