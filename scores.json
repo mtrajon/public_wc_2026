@@ -493,18 +493,49 @@
     }
   },
   "g26": {
-    "home": "",
-    "away": "",
+    "home": "4",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Granit Xhaka",
+          "goals": 1
+        },
+        {
+          "name": "Ruben Vargas",
+          "goals": 1
+        },
+        {
+          "name": "Johan Manzambi",
+          "goals": 2
+        }
+      ],
+      "away": [
+        {
+          "name": "Emin Mahmic",
+          "goals": 1
+        }
+      ]
     }
   },
   "g27": {
-    "home": "",
-    "away": "",
+    "home": "6",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Jonathan David",
+          "goals": 3
+        },
+        {
+          "name": "Cyle Larin",
+          "goals": 1
+        },
+        {
+          "name": "Nathan Saliba",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
