@@ -1,6 +1,6 @@
 # ⚽ World Cup 2026 Interactive Schedule
 
-[![GitHub Pages](https://img.shields.io/badge/Live-Demo-blue?logo=github)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME)
+[![GitHub Pages](https://img.shields.io/badge/Live-Demo-blue?logo=github)](https://mtrajon.github.io/public_wc_2026/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 [![Made with JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)]()
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
