@@ -540,10 +540,15 @@
     }
   },
   "g28": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Luis Romo",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
