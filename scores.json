@@ -609,10 +609,15 @@
     }
   },
   "g33": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Brian Brobbey",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
