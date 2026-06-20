@@ -322,7 +322,7 @@
       </div>
 
       <div class="panel" style="margin-top:20px;">
-        <h2 style="margin-top:0">Top Scorers</h2>
+        <h2 style="margin-top:0">Top 10 Scorers</h2>
         <div class="scorer-header">
           <span>Player</span>
           <span>Goals</span>
@@ -3046,7 +3046,7 @@ function renderTopScorers() {
     "Czechia": "cz"
   };
 
-  el.innerHTML = data.slice(0, 20).map(([name, goals], i) => {
+  el.innerHTML = data.slice(0, 10).map(([name, goals], i) => {
     const team = findPlayerTeam(name);
     const normalized = normalizeTeamName(team);
 
