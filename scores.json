@@ -579,13 +579,17 @@
     }
   },
   "g31": {
-    "home": "2",
+    "home": "3",
     "away": "0",
     "scorers": {
       "home": [
         {
           "name": "Matheus Cunha",
           "goals": 2
+        },
+        {
+          "name": "Vinícius Júnior",
+          "goals": 1
         }
       ],
       "away": []
