@@ -635,13 +635,13 @@
     }
   },
   "g34": {
-    "home": "1",
+    "home": "2",
     "away": "1",
     "scorers": {
       "home": [
         {
           "name": "Denis Undav",
-          "goals": 1
+          "goals": 2
         }
       ],
       "away": [
