@@ -596,11 +596,16 @@
     }
   },
   "g32": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Matias Galarza",
+          "goals": 1
+        }
+      ]
     }
   },
   "g33": {
