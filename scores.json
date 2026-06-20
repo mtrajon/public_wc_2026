@@ -610,7 +610,7 @@
   },
   "g33": {
     "home": "4",
-    "away": "0",
+    "away": "1",
     "scorers": {
       "home": [
         {
@@ -622,7 +622,12 @@
           "goals": 2
         }
       ],
-      "away": []
+      "away": [
+        {
+          "name": "Anthony Elanga",
+          "goals": 1
+        }
+      ]
     }
   },
   "g34": {
