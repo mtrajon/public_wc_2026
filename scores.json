@@ -553,19 +553,29 @@
     }
   },
   "g29": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Alex Freeman",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
   "g30": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Ismael Saibari",
+          "goals": 1
+        }
+      ]
     }
   },
   "g31": {
