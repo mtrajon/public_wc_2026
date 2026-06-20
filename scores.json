@@ -635,11 +635,21 @@
     }
   },
   "g34": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Denis Undav",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Franck Kessié",
+          "goals": 1
+        }
+      ]
     }
   },
   "g35": {
