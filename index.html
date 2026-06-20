@@ -280,6 +280,8 @@
 }
 
 
+
+.flag{width:20px;height:14px;margin-right:6px;vertical-align:middle;}
 </style>
 </head>
 <body>
@@ -2961,38 +2963,109 @@ function getTopScorers() {
   });
   return Object.entries(tally).sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]));
 }
+
+// Convert 2-letter country code into flag emoji
+function getFlagEmoji(code) {
+  return code
+    .toUpperCase()
+    .replace(/./g, char =>
+      String.fromCodePoint(127397 + char.charCodeAt())
+    );
+}
+
+// Map teams → ISO country codes (keep it minimal, expand later if needed)
+const TEAM_CODES = {
+  "Argentina": "AR",
+  "Brazil": "BR",
+  "France": "FR",
+  "Germany": "DE",
+  "England": "GB",
+  "USA": "US",
+  "Mexico": "MX",
+  "Japan": "JP",
+  "South Korea": "KR",
+  "Spain": "ES",
+  "Portugal": "PT",
+  "Netherlands": "NL",
+  "Belgium": "BE",
+  "Morocco": "MA",
+  "Canada": "CA",
+  "Australia": "AU",
+  "Croatia": "HR",
+  "Uruguay": "UY",
+  "Switzerland": "CH",
+  "Sweden": "SE",
+  "Saudi Arabia": "SA",
+  "Qatar": "QA",
+  "Ghana": "GH",
+  "Egypt": "EG",
+  "Norway": "NO",
+  "Türkiye": "TR",
+  "IR Iran": "IR",
+  "Czechia": "CZ"
+};
+
 function renderTopScorers() {
   const el = document.getElementById('topScorers');
   if (!el) return;
+
   const data = getTopScorers();
   if (!data.length) {
     el.innerHTML = '<div class="empty">No scorer data yet</div>';
     return;
   }
-  
-el.innerHTML = data.slice(0,20).map(([name, goals], i) => {
-  const team = findPlayerTeam(name);
 
-  
-const flag = TEAM_FLAGS[team] || "";
+  const TEAM_CODES = {
+    "Argentina": "ar",
+    "Brazil": "br",
+    "France": "fr",
+    "Germany": "de",
+    "England": "gb",
+    "USA": "us",
+    "Mexico": "mx",
+    "Japan": "jp",
+    "South Korea": "kr",
+    "Spain": "es",
+    "Portugal": "pt",
+    "Netherlands": "nl",
+    "Belgium": "be",
+    "Morocco": "ma",
+    "Canada": "ca",
+    "Australia": "au",
+    "Croatia": "hr",
+    "Uruguay": "uy",
+    "Switzerland": "ch",
+    "Sweden": "se",
+    "Saudi Arabia": "sa",
+    "Qatar": "qa",
+    "Ghana": "gh",
+    "Egypt": "eg",
+    "Norway": "no",
+    "Türkiye": "tr",
+    "IR Iran": "ir",
+    "Czechia": "cz"
+  };
 
-return `
-  <div class="scorer-item">
-    <div class="scorer-left">
-      <span class="rank">${i + 1}</span>
-      <div class="player-info">
-        <div class="player-name">
-          ${flag ? `<span class="flag">${flag}</span>` : ""} ${name}
+  el.innerHTML = data.slice(0, 20).map(([name, goals], i) => {
+    const team = findPlayerTeam(name);
+    const normalized = normalizeTeamName(team);
+
+    const code = TEAM_CODES[normalized] || TEAM_CODES[team];
+    const flagImg = code ? `<img class="flag" src="https://flagcdn.com/24x18/${code}.png">` : "";
+
+    return `
+      <div class="scorer-item">
+        <div class="scorer-left">
+          <span class="rank">${i + 1}</span>
+          <div class="player-info">
+            <div class="player-name">${flagImg} ${name}</div>
+            <div class="player-team">${team || ""}</div>
+          </div>
         </div>
-        <div class="player-team">${team || ""}</div>
+        <div class="scorer-goals">${goals}</div>
       </div>
-    </div>
-    <div class="scorer-goals">${goals}</div>
-  </div>
-`;
-
-
-}).join('');
+    `;
+  }).join('');
 }
 function getMatchTeams(matchId) {
   const match = MATCHES.find(m => m.id === matchId);
