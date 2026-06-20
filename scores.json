@@ -579,10 +579,15 @@
     }
   },
   "g31": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Matheus Cunha",
+          "goals": 2
+        }
+      ],
       "away": []
     }
   },
