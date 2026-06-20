@@ -330,6 +330,11 @@
         <div id="topScorers"></div>
       </div>
 
+      <div class="panel" style="margin-top:20px;">
+        <h2 style="margin-top:0">Tournament Stats</h2>
+        <div id="tournamentStats"></div>
+      </div>
+
       <div class="footer">Scorers are selected from Teams.json player lists where available. Some team entries in Teams.json appear truncated, so a few players may be missing from dropdowns.</div>
       <div class="footer">Group standings sort by points, goal difference, goals scored, then team name as a fallback.</div>
     </div>
@@ -403,6 +408,45 @@ const TEAM_FLAGS = {
   "Iran": "🇮🇷"
   // add more as needed
 };
+
+function renderTournamentStats() {
+  const el = document.getElementById("tournamentStats");
+  if (!el) return;
+
+  let totalGoals = 0;
+  let matchesPlayed = 0;
+  let highestGoals = 0;
+  let highestMatch = "";
+
+  MATCHES.forEach(match => {
+    const s = scores[match.id];
+    if (!s || s.home === "" || s.away === "") return;
+
+    const home = Number(s.home);
+    const away = Number(s.away);
+    const total = home + away;
+
+    totalGoals += total;
+    matchesPlayed++;
+
+    if (total > highestGoals) {
+      highestGoals = total;
+      highestMatch = `${match.home} ${home}-${away} ${match.away}`;
+    }
+  });
+
+  const avg = matchesPlayed
+    ? (totalGoals / matchesPlayed).toFixed(2)
+    : 0;
+
+  el.innerHTML = `
+    <div>🏆 Total goals: <strong>${totalGoals}</strong></div>
+    <div>⚽ Matches played: <strong>${matchesPlayed}</strong></div>
+    <div>📈 Avg goals/match: <strong>${avg}</strong></div>
+    <div>🔥 Highest scoring match:</div>
+    <div style="margin-left:10px;"><strong>${highestMatch || "-"}</strong></div>
+  `;
+}
 
 const TEAM_PLAYERS = {
   "Mexico": [
@@ -3548,6 +3592,7 @@ function render() {
   renderFixtures();
   renderKnockout();
   renderTopScorers();
+  renderTournamentStats();
 }
 
 
