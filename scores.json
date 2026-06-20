@@ -609,12 +609,16 @@
     }
   },
   "g33": {
-    "home": "2",
+    "home": "4",
     "away": "0",
     "scorers": {
       "home": [
         {
           "name": "Brian Brobbey",
+          "goals": 2
+        },
+        {
+          "name": "Cody Gakpo",
           "goals": 2
         }
       ],
