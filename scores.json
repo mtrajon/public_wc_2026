@@ -609,13 +609,13 @@
     }
   },
   "g33": {
-    "home": "1",
+    "home": "2",
     "away": "0",
     "scorers": {
       "home": [
         {
           "name": "Brian Brobbey",
-          "goals": 1
+          "goals": 2
         }
       ],
       "away": []
