@@ -662,12 +662,16 @@
   },
   "g36": {
     "home": "0",
-    "away": "1",
+    "away": "2",
     "scorers": {
       "home": [],
       "away": [
         {
           "name": "Daichi Kamada",
+          "goals": 1
+        },
+        {
+          "name": "Ayase Ueda",
           "goals": 1
         }
       ]
