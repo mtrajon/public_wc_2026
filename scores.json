@@ -682,10 +682,19 @@
     }
   },
   "g37": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Lamine Yamal",
+          "goals": 1
+        },
+        {
+          "name": "Mikel Oyarzabal",
+          "goals": 2
+        }
+      ],
       "away": []
     }
   },
