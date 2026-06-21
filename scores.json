@@ -661,11 +661,16 @@
     }
   },
   "g36": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Daichi Kamada",
+          "goals": 1
+        }
+      ]
     }
   },
   "g37": {
