@@ -662,7 +662,7 @@
   },
   "g36": {
     "home": "0",
-    "away": "2",
+    "away": "4",
     "scorers": {
       "home": [],
       "away": [
@@ -672,6 +672,10 @@
         },
         {
           "name": "Ayase Ueda",
+          "goals": 2
+        },
+        {
+          "name": "Junya Ito",
           "goals": 1
         }
       ]
