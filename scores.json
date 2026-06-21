@@ -653,8 +653,8 @@
     }
   },
   "g35": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "0",
     "scorers": {
       "home": [],
       "away": []
