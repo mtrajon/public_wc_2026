@@ -682,7 +682,7 @@
     }
   },
   "g37": {
-    "home": "3",
+    "home": "4",
     "away": "0",
     "scorers": {
       "home": [
@@ -699,19 +699,37 @@
     }
   },
   "g38": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "0",
     "scorers": {
       "home": [],
       "away": []
     }
   },
   "g39": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "2",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Maximiliano Araújo",
+          "goals": 1
+        },
+        {
+          "name": "Agustín Canobbio",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Kevin Pina",
+          "goals": 1
+        },
+        {
+          "name": "Hélio Varela",
+          "goals": 1
+        }
+      ]
     }
   },
   "g40": {
