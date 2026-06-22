@@ -104,6 +104,44 @@
   box-shadow: 0 0 10px rgba(34,197,94,0.2);  /* green glow */
 }
 
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.stat-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.05),
+    rgba(0,0,0,0.25)
+  );
+
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.stat-label {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 4px;
+  letter-spacing: 0.6px;
+}
+
+/* wide card for match */
+.stat-wide {
+  grid-column: 1 / -1;
+}
 
   /* knockout bracket */
   #knockout { overflow-x:auto; padding-top:10px; }
@@ -578,12 +616,39 @@ function renderTournamentStats() {
     ? (totalGoals / matchesPlayed).toFixed(2)
     : 0;
 
-  el.innerHTML = `
-    <div>🏆 Total goals: <strong>${totalGoals}</strong></div>
-    <div>⚽ Matches played: <strong>${matchesPlayed}</strong></div>
-    <div>📈 Avg goals/match: <strong>${avg}</strong></div>  
-    <div>🔥 Highest scoring match:  <strong>${highestMatch || "-"}</strong></div>
-  `;
+el.innerHTML = `
+  <div class="stats-grid">
+
+    <div class="stat-card">
+      <div class="stat-value">${totalGoals}</div>
+      <div class="stat-label">GOALS</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-value">${matchesPlayed}</div>
+      <div class="stat-label">MATCHES</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-value">${avg}</div>
+      <div class="stat-label">AVG</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-value">${highestGoals}</div>
+      <div class="stat-label">HIGHEST</div>
+    </div>
+
+    <div class="stat-card stat-wide">
+      <div class="stat-value">
+        ${highestMatch || "-"}
+      </div>
+      <div class="stat-label">TOP MATCH</div>
+    </div>
+
+  </div>
+`;
+
 }
 
 const TEAM_PLAYERS = {
