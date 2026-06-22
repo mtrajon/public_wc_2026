@@ -14,6 +14,63 @@
     --groupE:#b48ef7; --groupF:#66e6c1; --groupG:#ff7fc1; --groupH:#9db4ff;
     --groupI:#ff6f61; --groupJ:#62d1ff; --groupK:#b4ff7f; --groupL:#ffc85a;
   }
+
+.goals-chart-wrap {
+  margin-top: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.goals-chart-title {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 8px;
+}
+
+.goals-chart {
+  width: 100%;
+  height: 140px;
+  display: block;
+}
+
+.goals-chart .axis {
+  stroke: rgba(255,255,255,0.12);
+  stroke-width: 1;
+}
+
+.goals-chart .grid {
+  stroke: rgba(255,255,255,0.06);
+  stroke-width: 1;
+}
+
+.goals-chart .line {
+  fill: none;
+  stroke: #26c6ff;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.goals-chart .area {
+  fill: rgba(38,198,255,0.12);
+}
+
+.goals-chart .dot {
+  fill: #26c6ff;
+}
+
+.goals-chart-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
   * { box-sizing:border-box; }
   body { margin:0; font-family:Arial, Helvetica, sans-serif; background:linear-gradient(180deg,#07111f,#0a1728); color:var(--text); }
   .wrap { width:100%; max-width:none; margin:0; padding:16px 20px; }
@@ -630,6 +687,103 @@ const TEAM_FLAGS = {
   // add more as needed
 };
 
+function renderGoalsChart() {
+  const chartHost = document.getElementById("goalsChartHost");
+  if (!chartHost) return;
+
+  const played = MATCHES
+    .filter(match => {
+      const s = scores[match.id];
+      return s && s.home !== "" && s.away !== "";
+    })
+    .sort((a, b) => new Date(a.kickoff) - new Date(b.kickoff));
+
+  if (!played.length) {
+    chartHost.innerHTML = `
+      <div class="goals-chart-wrap">
+        <div class="goals-chart-title">Goals Trend</div>
+        <div class="empty">No completed matches yet</div>
+      </div>
+    `;
+    return;
+  }
+
+
+let total = 0;
+const pts = played.map((match, idx) => {
+  const s = scores[match.id];
+  total += Number(s.home) + Number(s.away);
+
+  const avg = total / (idx + 1);
+
+  return { x: idx + 1, y: avg };
+});
+
+
+  const width = 640;
+  const height = 140;
+  const padL = 28;
+  const padR = 10;
+  const padT = 10;
+  const padB = 22;
+
+  const maxY = Math.max(...pts.map(p => p.y), 1);
+  const minY = 0;
+  const plotW = width - padL - padR;
+  const plotH = height - padT - padB;
+
+  const sx = i =>
+    padL + (pts.length === 1 ? plotW / 2 : (i / (pts.length - 1)) * plotW);
+
+  const sy = v =>
+    padT + plotH - ((v - minY) / (maxY - minY || 1)) * plotH;
+
+  const poly = pts.map((p, i) => `${sx(i)},${sy(p.y)}`).join(" ");
+  const area =
+    `${padL},${padT + plotH} ` +
+    poly +
+    ` ${sx(pts.length - 1)},${padT + plotH}`;
+
+  const gridVals = [0.25, 0.5, 0.75, 1].map(f => Math.round(maxY * f));
+  const uniqueGrid = [...new Set(gridVals)].filter(v => v > 0);
+
+  chartHost.innerHTML = `
+    <div class="goals-chart-wrap">
+      <div class="goals-chart-title">Avg Goals per Match</div>
+
+      <svg
+        class="goals-chart"
+        viewBox="0 0 ${width} ${height}"
+        preserveAspectRatio="none"
+        aria-label="Cumulative goals chart"
+      >
+        ${uniqueGrid.map(v => `
+          <line class="grid" x1="${padL}" y1="${sy(v)}" x2="${width - padR}" y2="${sy(v)}"></line>
+        `).join("")}
+
+        <line class="axis" x1="${padL}" y1="${padT}" x2="${padL}" y2="${padT + plotH}"></line>
+        <line class="axis" x1="${padL}" y1="${padT + plotH}" x2="${width - padR}" y2="${padT + plotH}"></line>
+
+        <polygon class="area" points="${area}"></polygon>
+        <polyline class="line" points="${poly}"></polyline>
+
+        <circle
+          class="dot"
+          cx="${sx(pts.length - 1)}"
+          cy="${sy(pts[pts.length - 1].y)}"
+          r="4"
+        ></circle>
+      </svg>
+
+      <div class="goals-chart-labels">
+        <span>Start</span>     
+        <span>${pts.length} matches · avg ${pts[pts.length - 1].y.toFixed(2)}</span>
+
+      </div>
+    </div>
+  `;
+}
+
 function renderTournamentStats() {
   const el = document.getElementById("tournamentStats");
   if (!el) return;
@@ -696,6 +850,8 @@ el.innerHTML = `
   </div>
 `;
 
+el.innerHTML += `<div id="goalsChartHost"></div>`;
+renderGoalsChart();
 
 }
 
