@@ -733,11 +733,21 @@
     }
   },
   "g40": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Finn Surman",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Mostafa Ziko",
+          "goals": 1
+        }
+      ]
     }
   },
   "g41": {
