@@ -106,42 +106,86 @@
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
   margin-top: 8px;
 }
 
 .stat-card {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(
     135deg,
-    rgba(255,255,255,0.05),
-    rgba(0,0,0,0.25)
+    rgba(255,255,255,0.06),
+    rgba(0,0,0,0.28)
   );
-
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-
-  padding: 12px 10px;
+  border-radius: 16px;
+  padding: 14px 12px 12px;
+  min-height: 92px;
   text-align: center;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(38,198,255,0.35);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.28);
+}
+
+.stat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--accent);
+  opacity: 0.9;
 }
 
 .stat-value {
-  font-size: 18px;
-  font-weight: 700;
-  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
 }
 
 .stat-label {
-  font-size: 10px;
+  margin-top: 6px;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
   color: var(--muted);
-  margin-top: 4px;
-  letter-spacing: 0.6px;
 }
 
-/* wide card for match */
+.stat-icon {
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: block;
+  opacity: 0.95;
+}
+
 .stat-wide {
   grid-column: 1 / -1;
+  text-align: center;
+  min-height: 84px;
+  padding: 14px 14px 12px;
 }
+
+.stat-wide .stat-value {
+  font-size: 16px;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.stat-wide .stat-label {
+  margin-top: 8px;
+}
+
+.stat-accent-goals::before { background: #26c6ff; }
+.stat-accent-matches::before { background: #ffd36a; }
+.stat-accent-avg::before { background: #66e6c1; }
+.stat-accent-highest::before { background: #ff7f50; }
+.stat-accent-topmatch::before { background: #b48ef7; }
 
   /* knockout bracket */
   #knockout { overflow-x:auto; padding-top:10px; }
@@ -619,35 +663,39 @@ function renderTournamentStats() {
 el.innerHTML = `
   <div class="stats-grid">
 
-    <div class="stat-card">
+    <div class="stat-card stat-accent-goals">
+      <span class="stat-icon">⚽</span>
       <div class="stat-value">${totalGoals}</div>
-      <div class="stat-label">GOALS</div>
+      <div class="stat-label">Goals</div>
     </div>
 
-    <div class="stat-card">
+    <div class="stat-card stat-accent-matches">
+      <span class="stat-icon">📅</span>
       <div class="stat-value">${matchesPlayed}</div>
-      <div class="stat-label">MATCHES</div>
+      <div class="stat-label">Matches</div>
     </div>
 
-    <div class="stat-card">
+    <div class="stat-card stat-accent-avg">
+      <span class="stat-icon">📈</span>
       <div class="stat-value">${avg}</div>
-      <div class="stat-label">AVG</div>
+      <div class="stat-label">Avg</div>
     </div>
 
-    <div class="stat-card">
+    <div class="stat-card stat-accent-highest">
+      <span class="stat-icon">🔥</span>
       <div class="stat-value">${highestGoals}</div>
-      <div class="stat-label">MOST GOAL IN A MATCH</div>
+      <div class="stat-label">Most Goals</div>
     </div>
 
-    <div class="stat-card stat-wide">
-      <div class="stat-value">
-        ${highestMatch || "-"}
-      </div>
-      <div class="stat-label">TOP MATCH</div>
+    <div class="stat-card stat-wide stat-accent-topmatch">
+      <span class="stat-icon">🏟️</span>
+      <div class="stat-value">${highestMatch || "-"}</div>
+      <div class="stat-label">Top Match</div>
     </div>
 
   </div>
 `;
+
 
 }
 
