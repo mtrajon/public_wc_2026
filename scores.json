@@ -734,7 +734,7 @@
   },
   "g40": {
     "home": "1",
-    "away": "1",
+    "away": "3",
     "scorers": {
       "home": [
         {
@@ -745,6 +745,14 @@
       "away": [
         {
           "name": "Mostafa Ziko",
+          "goals": 1
+        },
+        {
+          "name": "Mohamed Salah",
+          "goals": 1
+        },
+        {
+          "name": "Trezeguet",
           "goals": 1
         }
       ]
