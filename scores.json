@@ -812,7 +812,7 @@
   },
   "g44": {
     "home": "1",
-    "away": "1",
+    "away": "2",
     "scorers": {
       "home": [
         {
@@ -823,6 +823,10 @@
       "away": [
         {
           "name": "Nadir Benbouali",
+          "goals": 1
+        },
+        {
+          "name": "Amine Gouiri",
           "goals": 1
         }
       ]
