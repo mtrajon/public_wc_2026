@@ -790,7 +790,7 @@
   },
   "g43": {
     "home": "3",
-    "away": "1",
+    "away": "2",
     "scorers": {
       "home": [
         {
@@ -805,7 +805,7 @@
       "away": [
         {
           "name": "Ismaïla Sarr",
-          "goals": 1
+          "goals": 2
         }
       ]
     }
