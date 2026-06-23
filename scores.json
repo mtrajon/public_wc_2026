@@ -833,10 +833,19 @@
     }
   },
   "g45": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Cristiano Ronaldo",
+          "goals": 2
+        },
+        {
+          "name": "Nuno Mendes",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
