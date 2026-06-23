@@ -759,7 +759,7 @@
     }
   },
   "g41": {
-    "home": "1",
+    "home": "2",
     "away": "0",
     "scorers": {
       "home": [
@@ -772,19 +772,42 @@
     }
   },
   "g42": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Ousmane Dembélé",
+          "goals": 1
+        },
+        {
+          "name": "Kylian Mbappé",
+          "goals": 2
+        }
+      ],
       "away": []
     }
   },
   "g43": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Erling Haaland",
+          "goals": 2
+        },
+        {
+          "name": "Marcus Holmgren Pedersen",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Ismaïla Sarr",
+          "goals": 1
+        }
+      ]
     }
   },
   "g44": {
