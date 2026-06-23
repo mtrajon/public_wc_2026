@@ -833,7 +833,7 @@
     }
   },
   "g45": {
-    "home": "3",
+    "home": "5",
     "away": "0",
     "scorers": {
       "home": [
@@ -843,6 +843,10 @@
         },
         {
           "name": "Nuno Mendes",
+          "goals": 1
+        },
+        {
+          "name": "Rafael Leão",
           "goals": 1
         }
       ],
