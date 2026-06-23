@@ -811,11 +811,21 @@
     }
   },
   "g44": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Nizar Al Rashdan",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Nadir Benbouali",
+          "goals": 1
+        }
+      ]
     }
   },
   "g45": {
