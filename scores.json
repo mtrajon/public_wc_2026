@@ -854,19 +854,24 @@
     }
   },
   "g46": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "0",
     "scorers": {
       "home": [],
       "away": []
     }
   },
   "g47": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Ante Budimir",
+          "goals": 1
+        }
+      ]
     }
   },
   "g48": {
