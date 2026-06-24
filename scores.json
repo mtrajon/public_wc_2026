@@ -875,10 +875,15 @@
     }
   },
   "g48": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Daniel Muñoz",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
