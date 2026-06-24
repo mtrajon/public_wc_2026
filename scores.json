@@ -927,11 +927,25 @@
     }
   },
   "g51": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "2",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Achraf Hakimi",
+          "goals": 1
+        },
+        {
+          "name": "Ismael Saibari",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Wilson Isidor",
+          "goals": 1
+        }
+      ]
     }
   },
   "g52": {
