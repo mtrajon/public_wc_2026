@@ -988,7 +988,7 @@
   },
   "g54": {
     "home": "0",
-    "away": "2",
+    "away": "3",
     "scorers": {
       "home": [],
       "away": [
@@ -998,6 +998,10 @@
         },
         {
           "name": "Mateo Chávez",
+          "goals": 1
+        },
+        {
+          "name": "Álvaro Fidalgo",
           "goals": 1
         }
       ]
