@@ -927,7 +927,7 @@
     }
   },
   "g51": {
-    "home": "2",
+    "home": "4",
     "away": "2",
     "scorers": {
       "home": [
@@ -937,6 +937,14 @@
         },
         {
           "name": "Ismael Saibari",
+          "goals": 1
+        },
+        {
+          "name": "Soufiane Rahimi",
+          "goals": 1
+        },
+        {
+          "name": "Gessime Yassine",
           "goals": 1
         }
       ],
@@ -950,13 +958,17 @@
   },
   "g52": {
     "home": "0",
-    "away": "2",
+    "away": "3",
     "scorers": {
       "home": [],
       "away": [
         {
           "name": "Vinícius Júnior",
           "goals": 2
+        },
+        {
+          "name": "Matheus Cunha",
+          "goals": 1
         }
       ]
     }
