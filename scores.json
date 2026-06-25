@@ -974,19 +974,33 @@
     }
   },
   "g53": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Thapelo Maseko",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
   "g54": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "2",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Julián Quiñones",
+          "goals": 1
+        },
+        {
+          "name": "Mateo Chávez",
+          "goals": 1
+        }
+      ]
     }
   },
   "g55": {
