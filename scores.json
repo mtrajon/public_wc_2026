@@ -1083,16 +1083,38 @@
     }
   },
   "g59": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "2",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Arda Güler",
+          "goals": 1
+        },
+        {
+          "name": "Orkun Kökçü",
+          "goals": 1
+        },
+        {
+          "name": "Kaan Ayhan",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Auston Trusty",
+          "goals": 1
+        },
+        {
+          "name": "Sebastian Berhalter",
+          "goals": 1
+        }
+      ]
     }
   },
   "g60": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "0",
     "scorers": {
       "home": [],
       "away": []
