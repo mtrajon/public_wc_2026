@@ -1008,35 +1008,78 @@
     }
   },
   "g55": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "2",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Nicolas Pépé",
+          "goals": 2
+        }
+      ]
     }
   },
   "g56": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Nilson Angulo",
+          "goals": 1
+        },
+        {
+          "name": "Gonzalo Plata",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Leroy Sané",
+          "goals": 1
+        }
+      ]
     }
   },
   "g57": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "3",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Hazem Mastouri",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Brian Brobbey",
+          "goals": 1
+        },
+        {
+          "name": "Jan Paul van Hecke",
+          "goals": 1
+        }
+      ]
     }
   },
   "g58": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Daizen Maeda",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Anthony Elanga",
+          "goals": 1
+        }
+      ]
     }
   },
   "g59": {
