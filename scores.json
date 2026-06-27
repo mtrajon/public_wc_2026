@@ -1094,10 +1094,6 @@
         {
           "name": "Orkun Kökçü",
           "goals": 1
-        },
-        {
-          "name": "Kaan Ayhan",
-          "goals": 1
         }
       ],
       "away": [
@@ -1121,18 +1117,44 @@
     }
   },
   "g61": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "4",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Ousmane Dembélé",
+          "goals": 3
+        },
+        {
+          "name": "Désiré Doué",
+          "goals": 1
+        }
+      ]
     }
   },
   "g62": {
-    "home": "",
-    "away": "",
+    "home": "5",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Ismaïla Sarr",
+          "goals": 1
+        },
+        {
+          "name": "Pape Gueye",
+          "goals": 2
+        },
+        {
+          "name": "Iliman Ndiaye",
+          "goals": 1
+        },
+        {
+          "name": "Habib Diarra",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
