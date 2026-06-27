@@ -589,39 +589,6 @@ const FIFA_RANK = {
   "Czechia": 44,
 };
 
-const TEAM_FLAGS = {
-  "Argentina": "🇦🇷",
-  "Brazil": "🇧🇷",
-  "France": "🇫🇷",
-  "Germany": "🇩🇪",
-  "England": "🏴",
-  "USA": "🇺🇸",
-  "Mexico": "🇲🇽",
-  "Japan": "🇯🇵",
-  "South Korea": "🇰🇷",
-  "Spain": "🇪🇸",
-  "Portugal": "🇵🇹",
-  "Netherlands": "🇳🇱",
-  "Belgium": "🇧🇪",
-  "Morocco": "🇲🇦",
-  "Canada": "🇨🇦",
-  "Australia": "🇦🇺",
-  "Croatia": "🇭🇷",
-  "Uruguay": "🇺🇾",
-  "Switzerland": "🇨🇭",
-  "Sweden": "🇸🇪",
-  "Saudi Arabia": "🇸🇦",
-  "Qatar": "🇶🇦",
-  "Ghana": "🇬🇭",
-  "Egypt": "🇪🇬",
-  "Norway": "🇳🇴",
-  "Türkiye": "🇹🇷",
-  "Iran": "🇮🇷",
-  "New Zealand": "🇳🇿"
-  // add more as needed
-};
-
-
 const KNOCKOUT_OVERRIDES = {
   m77: "France vs Sweden",
   m74: "Paraguay vs Germany",
@@ -908,7 +875,8 @@ function renderTopScorers() {
     "Türkiye": "tr",
     "IR Iran": "ir",
     "Czechia": "cz",
-    "New Zealand": "nz"
+    "New Zealand": "nz",
+    "Senegal": "sn"
   };
 
   el.innerHTML = data.slice(0, 10).map(([name, goals], i) => {
