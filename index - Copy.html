@@ -622,6 +622,12 @@ const TEAM_FLAGS = {
 };
 
 
+const KNOCKOUT_OVERRIDES = {
+  m77: "France vs Sweden",
+  m74: "Paraguay vs Germany",
+  // add more as needed
+};
+
 
 function renderTournamentStats() {
   const el = document.getElementById("tournamentStats");
@@ -1243,7 +1249,14 @@ function renderFixtures() {
       }
       titleHtml = `${homeName} vs ${awayName}`;
     } else {
-      const pairing = resolvedPairings[match.id] || match.pairing || '';
+      
+      
+    const pairing =
+      KNOCKOUT_OVERRIDES[match.id] ||
+      resolvedPairings[match.id] ||
+      match.pairing ||
+      '';
+
       let team1 = '';
       let team2 = '';
       if (pairing.includes(' vs ')) {
@@ -1303,7 +1316,12 @@ function renderKnockout() {
       let className = 'match-box';
 
       const title = match.id.replace('m', 'Match ');
-      const pairing = resolvedPairings[match.id] || match.pairing || '';
+        
+  const pairing =
+      KNOCKOUT_OVERRIDES[match.id] ||
+      resolvedPairings[match.id] ||
+      match.pairing ||
+      '';
 
       let team1 = '';
       let team2 = '';
