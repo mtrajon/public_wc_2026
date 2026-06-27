@@ -1228,19 +1228,42 @@
     }
   },
   "g67": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "2",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Jude Bellingham",
+          "goals": 1
+        },
+        {
+          "name": "Harry Kane",
+          "goals": 1
+        }
+      ]
     }
   },
   "g68": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Petar Sucic",
+          "goals": 1
+        },
+        {
+          "name": "Nikola Vlasic",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Derrick Luckassen",
+          "goals": 1
+        }
+      ]
     }
   },
   "g69": {
