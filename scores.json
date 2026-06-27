@@ -1159,19 +1159,24 @@
     }
   },
   "g63": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "0",
     "scorers": {
       "home": [],
       "away": []
     }
   },
   "g64": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Álex Baena",
+          "goals": 1
+        }
+      ]
     }
   },
   "g65": {
