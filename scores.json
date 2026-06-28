@@ -1361,11 +1361,16 @@
     }
   },
   "m73": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Stephen Eustaquio",
+          "goals": 1
+        }
+      ]
     }
   },
   "m80": {
