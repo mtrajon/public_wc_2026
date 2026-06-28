@@ -1297,19 +1297,59 @@
     }
   },
   "g71": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "3",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Rafik Belghali",
+          "goals": 1
+        },
+        {
+          "name": "Riyad Mahrez",
+          "goals": 2
+        }
+      ],
+      "away": [
+        {
+          "name": "Marko Arnautović",
+          "goals": 1
+        },
+        {
+          "name": "Marcel Sabitzer",
+          "goals": 1
+        },
+        {
+          "name": "Sasa Kalajdzic",
+          "goals": 1
+        }
+      ]
     }
   },
   "g72": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "3",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Mousa Al-Tamari",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Giovani Lo Celso",
+          "goals": 1
+        },
+        {
+          "name": "Lautaro Martínez",
+          "goals": 1
+        },
+        {
+          "name": "Lionel Messi",
+          "goals": 1
+        }
+      ]
     }
   },
   "m86": {
