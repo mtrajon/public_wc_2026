@@ -495,13 +495,25 @@ function renderTicker() {
     .join(" • ");
 
   // ✅ get next match
-  const next = getNextMatch();
+const next = getNextMatch();
 
-  let nextText = "No upcoming matches";
+let nextText = "No upcoming matches";
 
-  if (next) {
-    nextText = `${next.home} vs ${next.away} • ${formatLocal(next.kickoff)}`;
+if (next) {
+  let teamsText = "";
+
+  const resolved = resolveKnockoutPairings();
+
+  if (next.home && next.away) {
+    teamsText = `${next.home} vs ${next.away}`;
+  } else if (resolved[next.id]) {
+    teamsText = resolved[next.id];
+  } else {
+    teamsText = next.pairing || "TBD";
   }
+
+  nextText = `${teamsText} • ${formatLocal(next.kickoff)}`;
+}
 
   const fullText = `
     🔥 TOP SCORERS — ${top3}
