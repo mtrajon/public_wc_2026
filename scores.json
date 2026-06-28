@@ -1267,19 +1267,33 @@
     }
   },
   "g69": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "0",
     "scorers": {
       "home": [],
       "away": []
     }
   },
   "g70": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Yoane Wissa",
+          "goals": 2
+        },
+        {
+          "name": "Fiston Mayele",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Eldor Shomurodov",
+          "goals": 1
+        }
+      ]
     }
   },
   "g71": {
