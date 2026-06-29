@@ -601,6 +601,39 @@ const FIFA_RANK = {
   "Czechia": 44,
 };
 
+const KNOCKOUT_ORDER = {
+  "Round of 32": [
+    "m74", "m77",
+    "m73", "m75",
+    "m76", "m78",
+    "m79", "m80",
+    "m81", "m82",
+    "m83", "m84",
+    "m85", "m86",
+    "m87", "m88"
+  ],
+
+  "Round of 16": [
+    "m89", "m90",
+    "m91", "m92",
+    "m93", "m94",
+    "m95", "m96"
+  ],
+
+  "Quarter-final": [
+    "m97", "m98",
+    "m99", "m100"
+  ],
+
+  "Semi-final": [
+    "m101", "m102"
+  ],
+
+  "Final": [
+    "m104"
+  ]
+};
+
 const KNOCKOUT_OVERRIDES = {
   m77: "France vs Sweden",
   m74: "Germany vs Paraguay",
@@ -1291,7 +1324,19 @@ function renderKnockout() {
     if (!col) return;
     col.innerHTML = '<h4>' + stageName + '</h4>';
 
-    MATCHES.filter(function(m) { return m.stage === stageName; }).forEach(function(match) {
+    let matches = MATCHES.filter(function(m) {
+  return m.stage === stageName;
+});
+
+const order = KNOCKOUT_ORDER[stageName];
+
+if (order && Array.isArray(order)) {
+  matches = order
+    .map(id => MATCHES.find(m => m.id === id))
+    .filter(m => m); // ✅ important to avoid undefined
+}
+
+matches.forEach(function(match) {
       const card = document.createElement('div');
       let className = 'match-box';
 
