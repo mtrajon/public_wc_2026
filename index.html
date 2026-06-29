@@ -950,7 +950,14 @@ function getMatchTeams(matchId) {
   if (!match) return { homeLabel: 'Home', awayLabel: 'Away', homeTeam: '', awayTeam: '' };
   if (match.home && match.away) return { homeLabel: match.home, awayLabel: match.away, homeTeam: match.home, awayTeam: match.away };
   const resolved = resolveKnockoutPairings();
-  const pair = resolved[matchId] || match.pairing || '';
+  //const pair = resolved[matchId] || match.pairing || '';
+  
+const pair =
+  KNOCKOUT_OVERRIDES[matchId] ||   // ✅ ADD THIS
+  resolved[matchId] ||
+  match.pairing ||
+  '';
+
   if (pair.includes(' vs ')) {
     const parts = pair.split(' vs ');
     return { homeLabel: parts[0] || 'Home', awayLabel: parts[1] || 'Away', homeTeam: parts[0] || '', awayTeam: parts[1] || '' };
