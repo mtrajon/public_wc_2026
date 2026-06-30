@@ -1382,19 +1382,43 @@
     }
   },
   "m76": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Gabriel Martinelli",
+          "goals": 1
+        },
+        {
+          "name": "Casemiro",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Kaishu Sano",
+          "goals": 1
+        }
+      ]
     }
   },
   "m75": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Cody Gakpo",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Issa Diop",
+          "goals": 1
+        }
+      ]
     }
   },
   "m82": {
@@ -1406,16 +1430,26 @@
     }
   },
   "m74": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Kai Havertz",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Julio Enciso",
+          "goals": 1
+        }
+      ]
     }
   },
   "m78": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
       "home": [],
       "away": []
