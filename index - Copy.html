@@ -61,7 +61,7 @@
   .meta { color:var(--muted); font-size:13px; line-height:1.5; margin-top:6px; }
   .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
   .chip { padding:5px 9px; border-radius:999px; border:1px solid var(--border); font-size:12px; background:rgba(255,255,255,.04); }
-  .score-box { display:flex; align-items:center; justify-content:center; gap:8px; }
+  .score-box {  display: flex;  flex-direction: column;  gap: 4px;}
   .score-box input { width:55px !important; text-align:center; padding:6px; background:#081321; color:var(--text); border:1px solid var(--border); border-radius:10px; font-size:16px; }
   /*.fav-btn { background:transparent; color:var(--star); border:none; font-size:26px; cursor:pointer; }*/
   .empty { color:var(--muted); text-align:center; padding:30px; border:1px dashed rgba(255,255,255,.12); border-radius:16px; }
@@ -722,7 +722,7 @@ const TEAM_PLAYERS = {
   "Qatar":[{"name":"Saad Al Sheeb"},{"name":"Meshaal Barsham"},{"name":"Shehab Ellethy"},{"name":"Pedro Miguel"},{"name":"Bassam Al-Rawi"},{"name":"Boualem Khoukhi"},{"name":"Tarek Salman"},{"name":"Abdelkarim Hassan"},{"name":"Karim Boudiaf"},{"name":"Abdulaziz Hatem"},{"name":"Assim Madibo"},{"name":"Mostafa Mashaal"},{"name":"Akram Afif"},{"name":"Almoez Ali"},{"name":"Hassan Al-Haydos"},{"name":"Miro Muheim"},{"name":"Naif Al-Hadhrami"}],
   "Switzerland":[{"name":"Yann Sommer"},{"name":"Gregor Kobel"},{"name":"Yvon Mvogo"},{"name":"Manuel Akanji"},{"name":"Nico Elvedi"},{"name":"Ricardo Rodríguez"},{"name":"Silvan Widmer"},{"name":"Fabian Schär"},{"name":"Cédric Zesiger"},{"name":"Granit Xhaka"},{"name":"Denis Zakaria"},{"name":"Remo Freuler"},{"name":"Djibril Sow"},{"name":"Xherdan Shaqiri"},{"name":"Breel Embolo"},{"name":"Noah Okafor"},{"name":"Johan Manzambi"},{"name":"Ruben Vargas"}],
   "Brazil":[{"name":"Alisson"},{"name":"Ederson"},{"name":"Weverton"},{"name":"Danilo"},{"name":"Wesley"},{"name":"Marquinhos"},{"name":"Gabriel Magalhães"},{"name":"Léo Pereira"},{"name":"Bremer"},{"name":"Ibáñez"},{"name":"Alex Sandro"},{"name":"Douglas Santos"},{"name":"Casemiro"},{"name":"Bruno Guimarães"},{"name":"Fabinho"},{"name":"Lucas Paquetá"},{"name":"João Gomes"},{"name":"Neymar"},{"name":"Vinícius Júnior"},{"name":"Rodrygo"},{"name":"Raphinha"},{"name":"Antony"},{"name":"Richarlison"},{"name":"Gabriel Martinelli"},{"name":"Matheus Cunha"},{"name":"Pedro"}],
-  "Morocco":[{"name":"Yassine Bounou"},{"name":"Munir El Kajoui"},{"name":"Ahmed Reda Tagnaouti"},{"name":"Achraf Hakimi"},{"name":"Noussair Mazraoui"},{"name":"Romain Saïss"},{"name":"Nayef Aguerd"},{"name":"Yahia Attiyat Allah"},{"name":"Jawad El Yamiq"},{"name":"Sofyan Amrabat"},{"name":"Azzedine Ounahi"},{"name":"Ismael Saibari"},{"name":"Bilal El Khannouss"},{"name":"Hakim Ziyech"},{"name":"Youssef En-Nesyri"},{"name":"Sofiane Boufal"},{"name":"Abde Ezzalzouli"},{"name":"Soufiane Rahimi"},{"name":"Gessime Yassine"},{"name":"Amine Adli"}],
+  "Morocco":[{"name":"Yassine Bounou"},{"name":"Munir El Kajoui"},{"name":"Ahmed Reda Tagnaouti"},{"name":"Achraf Hakimi"},{"name":"Noussair Mazraoui"},{"name":"Romain Saïss"},{"name":"Nayef Aguerd"},{"name":"Yahia Attiyat Allah"},{"name":"Jawad El Yamiq"},{"name":"Sofyan Amrabat"},{"name":"Azzedine Ounahi"},{"name":"Ismael Saibari"},{"name":"Bilal El Khannouss"},{"name":"Hakim Ziyech"},{"name":"Youssef En-Nesyri"},{"name":"Sofiane Boufal"},{"name":"Abde Ezzalzouli"},{"name":"Soufiane Rahimi"},{"name":"Gessime Yassine"},{"name":"Issa Diop"},{"name":"Amine Adli"}],
   "Haiti":[{"name":"Johny Placide"},{"name":"Alexandre Pierre"},{"name":"Ronaldo Damus"},{"name":"Carlens Arcus"},{"name":"Ricardo Adé"},{"name":"Jean-Kevin Duverne"},{"name":"Alex Christian Jr."},{"name":"Bryan Alceus"},{"name":"Danley Jean Jacques"},{"name":"Derrick Étienne Jr."},{"name":"Duckens Nazon"},{"name":"Wilson Isidor"},{"name":"Frantzdy Pierrot"}],
   "Scotland":[{"name":"Craig Gordon"},{"name":"Angus Gunn"},{"name":"Liam Kelly"},{"name":"Andy Robertson"},{"name":"Kieran Tierney"},{"name":"Grant Hanley"},{"name":"Jack Hendry"},{"name":"Ryan Porteous"},{"name":"Aaron Hickey"},{"name":"Scott McTominay"},{"name":"Billy Gilmour"},{"name":"Callum McGregor"},{"name":"John McGinn"},{"name":"Lyndon Dykes"},{"name":"Che Adams"},{"name":"Ryan Christie"}],
   "USA":[{"name":"Matt Turner"},{"name":"Matt Freese"},{"name":"Chris Brady"},{"name":"Sergiño Dest"},{"name":"Chris Richards"},{"name":"Tim Ream"},{"name":"Miles Robinson"},{"name":"Joe Scally"},{"name":"Auston Trusty"},{"name":"Mark McKenzie"},{"name":"Tyler Adams"},{"name":"Weston McKennie"},{"name":"Yunus Musah"},{"name":"Gio Reyna"},{"name":"Christian Pulisic"},{"name":"Timothy Weah"},{"name":"Folarin Balogun"},{"name":"Alex Freeman"},{"name":"Sebastian Berhalter"},{"name":"Ricardo Pepi"}],
@@ -745,11 +745,11 @@ const TEAM_PLAYERS = {
   "Uruguay":[{"name":"Sergio Rochet"},{"name":"Fernando Muslera"},{"name":"Santiago Mele"},{"name":"José María Giménez"},{"name":"Ronald Araújo"},{"name":"Sebastián Cáceres"},{"name":"Mathías Olivera"},{"name":"Guillermo Varela"},{"name":"Federico Valverde"},{"name":"Manuel Ugarte"},{"name":"Nicolás De La Cruz"},{"name":"Rodrigo Bentancur"},{"name":"Darwin Núñez"},{"name":"Luis Suárez"},{"name":"Facundo Pellistri"},{"name":"Agustín Canobbio"},{"name":"Thelo Aasgaard"},{"name":"Maximiliano Araújo"}],
   "Saudi Arabia":[{"name":"Mohammed Al-Owais"},{"name":"Nawaf Al-Aqidi"},{"name":"Abdullah Al-Mayouf"},{"name":"Saud Abdulhamid"},{"name":"Ali Al-Bulaihi"},{"name":"Abdulelah Al-Amri"},{"name":"Hassan Tambakti"},{"name":"Yasser Al-Shahrani"},{"name":"Salem Al-Dawsari"},{"name":"Abdullah Otayf"},{"name":"Mohammed Kanno"},{"name":"Nasser Al-Dawsari"},{"name":"Firas Al-Buraikan"},{"name":"Saleh Al-Shehri"},{"name":"Abdulrahman Ghareeb"}],
   "Cabo Verde":[{"name":"Vozinha"},{"name":"Kevin Sousa"},{"name":"Dylan Tavares"},{"name":"Stopira"},{"name":"Logan Costa"},{"name":"Roberto Lopes"},{"name":"Steven Moreira"},{"name":"Ryan Mendes"},{"name":"Deroy Duarte"},{"name":"Kenny Rocha Santos"},{"name":"Julio Tavares"},{"name":"Kevin Pina"},{"name":"Hélio Varela"},{"name":"Bebé"}],
-  "France":[{"name":"Hugo Lloris"},{"name":"Mike Maignan"},{"name":"Alphonse Areola"},{"name":"Benjamin Pavard"},{"name":"Jules Koundé"},{"name":"William Saliba"},{"name":"Dayot Upamecano"},{"name":"Theo Hernández"},{"name":"N'Golo Kanté"},{"name":"Aurélien Tchouaméni"},{"name":"Eduardo Camavinga"},{"name":"Adrien Rabiot"},{"name":"Kylian Mbappé"},{"name":"Antoine Griezmann"},{"name":"Ousmane Dembélé"},{"name":"Désiré Doué"},{"name":"Randal Kolo Muani"}],
+  "France":[{"name":"Hugo Lloris"},{"name":"Mike Maignan"},{"name":"Alphonse Areola"},{"name":"Benjamin Pavard"},{"name":"Jules Koundé"},{"name":"William Saliba"},{"name":"Dayot Upamecano"},{"name":"Theo Hernández"},{"name":"N'Golo Kanté"},{"name":"Aurélien Tchouaméni"},{"name":"Eduardo Camavinga"},{"name":"Adrien Rabiot"},{"name":"Kylian Mbappé"},{"name":"Antoine Griezmann"},{"name":"Ousmane Dembélé"},{"name":"Désiré Doué"},{"name":"Bradley Barcola"},{"name":"Randal Kolo Muani"}],
   "Senegal":[{"name":"Edouard Mendy"},{"name":"Mory Diaw"},{"name":"Alfred Gomis"},{"name":"Kalidou Koulibaly"},{"name":"Abdou Diallo"},{"name":"Pape Abou Cissé"},{"name":"Youssouf Sabaly"},{"name":"Ismail Jakobs"},{"name":"Idrissa Gueye"},{"name":"Pape Matar Sarr"},{"name":"Nampalys Mendy"},{"name":"Sadio Mané"},{"name":"Ismaïla Sarr"},{"name":"Boulaye Dia"},{"name":"Habib Diarra"},{"name":"Pape Gueye"},{"name":"Iliman Ndiaye"},{"name":"Nicolas Jackson"}],
   "Iraq":[{"name":"Jalal Hassan"},{"name":"Ahmed Basil"},{"name":"Fahad Talib"},{"name":"Ali Adnan"},{"name":"Rebin Sulaka"},{"name":"Frans Putros"},{"name":"Mustafa Nadhim"},{"name":"Amjad Attwan"},{"name":"Saad Natiq"},{"name":"Osama Rashid"},{"name":"Aymen Hussein"},{"name":"Mohanad Ali"}],
   "Norway":[{"name":"Ørjan Nyland"},{"name":"Rune Jarstein"},{"name":"Egil Selvik"},{"name":"Stefan Strandberg"},{"name":"Leo Østigård"},{"name":"Kristoffer Ajer"},{"name":"Birger Meling"},{"name":"Martin Ødegaard"},{"name":"Sander Berge"},{"name":"Fredrik Aursnes"},{"name":"Erling Haaland"},{"name":"Marcus Holmgren Pedersen"},{"name":"Alexander Sørloth"}],
-  "Argentina":[{"name":"Emiliano Martínez"},{"name":"Gerónimo Rulli"},{"name":"Juan Musso"},{"name":"Cristian Romero"},{"name":"Lisandro Martínez"},{"name":"Nicolás Otamendi"},{"name":"Nahuel Molina"},{"name":"Nicolás Tagliafico"},{"name":"Rodrigo De Paul"},{"name":"Enzo Fernández"},{"name":"Alexis Mac Allister"},{"name":"Leandro Paredes"},{"name":"Lionel Messi"},{"name":"Lautaro Martínez"},{"name":"Julián Álvarez"},{"name":"Nicolás González"}],
+  "Argentina":[{"name":"Emiliano Martínez"},{"name":"Gerónimo Rulli"},{"name":"Juan Musso"},{"name":"Cristian Romero"},{"name":"Lisandro Martínez"},{"name":"Nicolás Otamendi"},{"name":"Nahuel Molina"},{"name":"Nicolás Tagliafico"},{"name":"Rodrigo De Paul"},{"name":"Enzo Fernández"},{"name":"Alexis Mac Allister"},{"name":"Leandro Paredes"},{"name":"Lionel Messi"},{"name":"Lautaro Martínez"},{"name":"Julián Álvarez"},{"name":"Giovani Lo Celso"},{"name":"Nicolás González"}],
   "Algeria":[{"name":"Oussama Benbot"},{"name":"Melvin Mastil"},{"name":"Luca Zidane"},{"name":"Ramy Bensebaini"},{"name":"Aïssa Mandi"},{"name":"Zineddine Belaid"},{"name":"Rayan Aït-Nouri"},{"name":"Jaouen Hadjam"},{"name":"Houssem Aouar"},{"name":"Nabil Bentaleb"},{"name":"Ramiz Zerrouki"},{"name":"Hicham Boudaoui"},{"name":"Fares Chaïbi"},{"name":"Mohamed Amoura"},{"name":"Nadir Benbouali"},{"name":"Amine Gouiri"},{"name":"Rafik Belghali"},{"name":"Riyad Mahrez"},{"name":"Adil Boulbina"}],
   "Austria":[{"name":"Heinz Lindner"},{"name":"Alexander Schlager"},{"name":"Patrick Pentz"},{"name":"David Alaba"},{"name":"Stefan Posch"},{"name":"Phillipp Mwene"},{"name":"Maximilian Wöber"},{"name":"Kevin Danso"},{"name":"Marcel Sabitzer"},{"name":"Konrad Laimer"},{"name":"Christoph Baumgartner"},{"name":"Nicolas Seiwald"},{"name":"Marko Arnautović"},{"name":"Romano Schmid"},{"name":"Michael Gregoritsch"},{"name":"Sasa Kalajdzic"},{"name":"Karim Adeyemi"}],
   "Jordan":[{"name":"Ali Olwan"},{"name":"Amer Shafi"},{"name":"Yazeed Abulaila"},{"name":"Abdullah Al-Fakhouri"},{"name":"Abdallah Nasib"},{"name":"Hamza Al-Dardour"},{"name":"Yazan Al Arab"},{"name":"Baha Abdel-Rahman"},{"name":"Mousa Al-Tamari"},{"name":"Nizar Al Rashdan"},{"name":"Yazan Al-Naimat"}],
@@ -815,19 +815,26 @@ function scoreComplete(id) {
 }
 
 function setScore(id, side, value) {
-  if (!scores[id]) scores[id] = { home: '', away: '' };
-  scores[id][side] = value === '' ? '' : String(Math.max(0, parseInt(value || '0', 10)));
+  if (!scores[id]) {
+    scores[id] = {
+      home: '',
+      away: '',
+      penHome: '',
+      penAway: ''
+    };
+  }
+
+  // ✅ keep existing behaviour
+  scores[id][side] =
+    value === '' ? '' : String(Math.max(0, parseInt(value || '0', 10)));
 
   saveState();
 
-  // ✅ only update UI parts (no full reset!)
   renderTables();
   renderKnockout();
   renderFixtures();
   renderTopScorers();
 }
-
-
 
 let currentScorerMatchId = null;
 let tempScorers = null;
@@ -1181,17 +1188,34 @@ function resolveKnockoutPairings() {
   });
 
   function winnerOf(matchId) {
-    const match = MATCHES.find(function(m) { return m.id === matchId; });
-    if (!match) return 'Winner ' + matchId.replace('m', 'Match ');
-    const pairing = resolved[matchId] || match.pairing || '';
-    const teams = splitResolvedPairing(pairing);
-    if (!scoreComplete(matchId)) return 'Winner ' + matchId.replace('m', 'Match ');
-    const home = Number(scores[matchId].home);
-    const away = Number(scores[matchId].away);
-    if (home > away) return teams[0];
-    if (away > home) return teams[1];
-    return 'TBD (tie in ' + matchId.replace('m', 'Match ') + ')';
+  const match = MATCHES.find(function(m) { return m.id === matchId; });
+  if (!match) return 'Winner ' + matchId.replace('m', 'Match ');
+
+  const pairing = resolved[matchId] || match.pairing || '';
+  const teams = splitResolvedPairing(pairing);
+
+  if (!scoreComplete(matchId)) {
+    return 'Winner ' + matchId.replace('m', 'Match ');
   }
+
+  const home = Number(scores[matchId].home);
+  const away = Number(scores[matchId].away);
+
+  // ✅ normal win
+  if (home > away) return teams[0];
+  if (away > home) return teams[1];
+
+  // ✅ penalties
+  const pHome = Number(scores[matchId]?.penHome);
+  const pAway = Number(scores[matchId]?.penAway);
+
+  if (!isNaN(pHome) && !isNaN(pAway)) {
+    if (pHome > pAway) return teams[0];
+    if (pAway > pHome) return teams[1];
+  }
+
+  return 'TBD (tie in ' + matchId.replace('m', 'Match ') + ')';
+}
 
   function runnerUpOf(matchId) {
     const match = MATCHES.find(function(m) { return m.id === matchId; });
@@ -1219,66 +1243,106 @@ function renderFixtures() {
   const data = getFilteredMatches();
   const resolvedPairings = resolveKnockoutPairings();
   const container = document.getElementById('fixturesContainer');
+
   container.innerHTML = '';
+
   if (!data.length) {
     container.innerHTML = '<div class="empty">No fixtures match your search or stage filter.</div>';
     return;
   }
+
   let currentDay = '';
   let dayBlock;
+
   data.forEach(match => {
+
+    const s = scores[match.id] || {}; // ✅ SAFE OBJECT
+
     const day = localDayLabel(match.kickoff);
+
     if (day !== currentDay) {
       currentDay = day;
       dayBlock = document.createElement('div');
       dayBlock.innerHTML = `<div class="day-title">${day}</div>`;
       container.appendChild(dayBlock);
     }
+
     const card = document.createElement('div');
     card.className = 'match-card ' + highlightClass(match);
+
     const tz = document.getElementById('timezoneSelect').value;
+
     function getLocalDateString(dateStr) {
       const d = new Date(dateStr);
       if (tz === 'auto') return d.toDateString();
       return d.toLocaleDateString([], { timeZone: tz });
     }
+
     const today = getLocalDateString(new Date());
     const matchDay = getLocalDateString(match.kickoff);
+
     if (today === matchDay) card.classList.add('today');
     if (scoreComplete(match.id)) card.classList.add('match-complete');
+
     if (match.group && groupColors[match.group]) {
       card.style.setProperty('--group-color', groupColors[match.group]);
     }
+
     let titleHtml = '';
+
+    // ✅ GROUP STAGE
     if (match.stage === 'Group') {
+
       let homeName = match.home;
       let awayName = match.away;
+
       if (scoreComplete(match.id)) {
-        const home = Number(scores[match.id].home);
-        const away = Number(scores[match.id].away);
-        if (home !== away) {
-          card.classList.add('match-winner');
-          if (home > away) {
-            homeName = `<span class="team-winner">${homeName}</span>`;
-            awayName = `<span class="team-loser">${awayName}</span>`;
-          } else {
-            awayName = `<span class="team-winner">${awayName}</span>`;
-            homeName = `<span class="team-loser">${homeName}</span>`;
+
+        const home = Number(s.home);
+        const away = Number(s.away);
+
+        let winner = null;
+
+        if (home > away) winner = 1;
+        else if (away > home) winner = 2;
+        else {
+          const pHome = Number(s.penHome);
+          const pAway = Number(s.penAway);
+
+          if (!isNaN(pHome) && !isNaN(pAway)) {
+            if (pHome > pAway) winner = 1;
+            else if (pAway > pHome) winner = 2;
           }
         }
+
+        if (winner === 1) {
+          card.classList.add('match-winner');
+          homeName = `<span class="team-winner">${homeName}</span>`;
+          awayName = `<span class="team-loser">${awayName}</span>`;
+        }
+
+        if (winner === 2) {
+          card.classList.add('match-winner');
+          awayName = `<span class="team-winner">${awayName}</span>`;
+          homeName = `<span class="team-loser">${homeName}</span>`;
+        }
       }
+
       titleHtml = `${homeName} vs ${awayName}`;
-    } else {
-      
-      
-    const pairing =
-      KNOCKOUT_OVERRIDES[match.id] ||
-      resolvedPairings[match.id] ||
-      match.pairing ||
-      '';
+
+    } 
+    // ✅ KNOCKOUT
+    else {
+
+      const pairing =
+        KNOCKOUT_OVERRIDES[match.id] ||
+        resolvedPairings[match.id] ||
+        match.pairing ||
+        '';
 
       let team1 = '';
       let team2 = '';
+
       if (pairing.includes(' vs ')) {
         const parts = pairing.split(' vs ');
         team1 = parts[0] || '';
@@ -1286,27 +1350,115 @@ function renderFixtures() {
       } else {
         team1 = pairing;
       }
+
       if (scoreComplete(match.id)) {
-        const home = Number(scores[match.id].home);
-        const away = Number(scores[match.id].away);
-        if (home !== away) {
-          card.classList.add('match-winner');
-          if (home > away) {
-            team1 = `<span class="team-winner">${team1}</span>`;
-            team2 = `<span class="team-loser">${team2}</span>`;
-          } else {
-            team2 = `<span class="team-winner">${team2}</span>`;
-            team1 = `<span class="team-loser">${team1}</span>`;
+
+        const home = Number(s.home);
+        const away = Number(s.away);
+
+        let winner = null;
+
+        if (home > away) winner = 1;
+        else if (away > home) winner = 2;
+        else {
+          const pHome = Number(s.penHome);
+          const pAway = Number(s.penAway);
+
+          if (!isNaN(pHome) && !isNaN(pAway)) {
+            if (pHome > pAway) winner = 1;
+            else if (pAway > pHome) winner = 2;
           }
         }
+
+        if (winner === 1) {
+          card.classList.add('match-winner');
+          team1 = `<span class="team-winner">${team1}</span>`;
+          team2 = `<span class="team-loser">${team2}</span>`;
+        }
+
+        if (winner === 2) {
+          card.classList.add('match-winner');
+          team2 = `<span class="team-winner">${team2}</span>`;
+          team1 = `<span class="team-loser">${team1}</span>`;
+        }
       }
-      titleHtml = `${match.id.replace('m','Match ')} · ${team1}${team2 ? ' vs ' + team2 : ''}`;
+
+      titleHtml = `${match.id.replace('m', 'Match ')} · ${team1}${team2 ? ' vs ' + team2 : ''}`;
     }
+
     const chips = [`<span class="chip">${match.stage}</span>`];
-    if (match.group) chips.push(`<span class="chip" style="border-color:${groupColors[match.group]}55"> ${match.group}</span>`);
+
+    if (match.group) {
+      chips.push(`<span class="chip" style="border-color:${groupColors[match.group]}55"> ${match.group}</span>`);
+    }
+
     chips.push(`<span class="chip">${match.venue}</span>`);
+
     const summary = scorerSummary(match.id);
-    card.innerHTML = `<div><div class="title">${titleHtml}</div><div class="meta">Local time: ${formatLocal(match.kickoff)}</div><div class="chips">${chips.join('')}</div></div><div class="meta"><div><strong>Entered score</strong></div><div>${scoreComplete(match.id) ? 'Score saved' : 'Waiting for score'}</div><div style="margin-top:8px;"><button class="tiny-btn" onclick="openScorerModal('${match.id}')">⚽ Edit scorers</button></div></div><div class="score-box"><input type="number" min="0" value="${scores[match.id]?.home ?? ''}" onchange="setScore('${match.id}','home',this.value)" /><span>:</span><input type="number" min="0" value="${scores[match.id]?.away ?? ''}" onchange="setScore('${match.id}','away',this.value)" /></div>${summary ? `<div class="match-scorer-summary">${summary}</div>` : ''}`;
+
+    const isDraw =
+      s.home !== '' &&
+      s.away !== '' &&
+      String(s.home) === String(s.away);
+
+    card.innerHTML = `
+      <div>
+        <div class="title">${titleHtml}</div>
+        <div class="meta">Local time: ${formatLocal(match.kickoff)}</div>
+        <div class="chips">${chips.join('')}</div>
+      </div>
+
+      <div class="meta">
+        <div><strong>Entered score</strong></div>
+        <div>${scoreComplete(match.id) ? 'Score saved' : 'Waiting for score'}</div>
+        <div style="margin-top:8px;">
+          <button class="tiny-btn" onclick="openScorerModal('${match.id}')">⚽ Edit scorers</button>
+        </div>
+      </div>
+
+<div class="score-box" style="flex-direction:column; align-items:center;">
+
+  <!-- normal score -->
+  <div style="display:flex; align-items:center; gap:8px;">
+    <input type="number" min="0"
+      value="${s.home ?? ''}"
+      onchange="setScore('${match.id}','home',this.value)" />
+
+    <span>:</span>
+
+    <input type="number" min="0"
+      value="${s.away ?? ''}"
+      onchange="setScore('${match.id}','away',this.value)" />
+  </div>
+
+  ${
+    isDraw ? `
+      <!-- pen label ABOVE -->
+      <div style="font-size:10px; color:#9eb3d0; margin-top:4px;">
+        pen
+      </div>
+
+      <!-- penalty inputs -->
+      <div style="display:flex; align-items:center; gap:4px;">
+        <input type="number" min="0" style="width:35px"
+          value="${s.penHome ?? ''}"
+          onchange="setScore('${match.id}','penHome',this.value)" />
+
+        <span>:</span>
+
+        <input type="number" min="0" style="width:35px"
+          value="${s.penAway ?? ''}"
+          onchange="setScore('${match.id}','penAway',this.value)" />
+      </div>
+    `
+    : ''
+  }
+
+</div>
+
+      ${summary ? `<div class="match-scorer-summary">${summary}</div>` : ''}
+    `;
+
     dayBlock.appendChild(card);
   });
 }
@@ -1368,16 +1520,35 @@ matches.forEach(function(match) {
       if (scoreComplete(match.id)) {
         const home = Number(scores[match.id].home);
         const away = Number(scores[match.id].away);
-        if (home !== away) {
-          className += ' match-winner';
-          if (home > away) {
-            team1 = "<span class='team-winner'>" + team1 + "</span>";
-            team2 = "<span class='team-loser'>" + team2 + "</span>";
-          } else {
-            team2 = "<span class='team-winner'>" + team2 + "</span>";
-            team1 = "<span class='team-loser'>" + team1 + "</span>";
-          }
-        }
+        let winner = null;
+
+if (home > away) {
+  winner = 1;
+} else if (away > home) {
+  winner = 2;
+} else {
+  // ✅ penalties decide winner
+  const pHome = Number(scores[match.id]?.penHome);
+  const pAway = Number(scores[match.id]?.penAway);
+
+  if (!isNaN(pHome) && !isNaN(pAway)) {
+    if (pHome > pAway) winner = 1;
+    else if (pAway > pHome) winner = 2;
+  }
+}
+
+// ✅ apply styling
+if (winner === 1) {
+  className += ' match-winner';
+  team1 = `<span class="team-winner">${team1}</span>`;
+  team2 = `<span class="team-loser">${team2}</span>`;
+}
+
+if (winner === 2) {
+  className += ' match-winner';
+  team2 = `<span class="team-winner">${team2}</span>`;
+  team1 = `<span class="team-loser">${team1}</span>`;
+}
       }
 
       card.className = className;
@@ -1385,7 +1556,18 @@ matches.forEach(function(match) {
 let scoreText = "";
 
 if (scoreComplete(match.id)) {
-  scoreText = " " + scores[match.id].home + " – " + scores[match.id].away + " ";
+  const h = scores[match.id].home;
+  const a = scores[match.id].away;
+
+  if (
+    h === a &&
+    scores[match.id]?.penHome !== '' &&
+    scores[match.id]?.penAway !== ''
+  ) {
+    scoreText = ` ${h}-${a} (pen ${scores[match.id].penHome}-${scores[match.id].penAway}) `;
+  } else {
+    scoreText = ` ${h}-${a} `;
+  }
 } else {
   scoreText = " vs ";
 }

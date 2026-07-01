@@ -1419,7 +1419,9 @@
           "goals": 1
         }
       ]
-    }
+    },
+    "penHome": "2",
+    "penAway": "3"
   },
   "m82": {
     "home": "",
@@ -1445,29 +1447,59 @@
           "goals": 1
         }
       ]
-    }
+    },
+    "penHome": "3",
+    "penAway": "4"
   },
   "m78": {
     "home": "1",
-    "away": "1",
+    "away": "2",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Amad Diallo",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Erling Haaland",
+          "goals": 1
+        }
+      ]
     }
   },
   "m77": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Kylian Mbappé",
+          "goals": 2
+        },
+        {
+          "name": "Bradley Barcola",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
   "m79": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Julián Quiñones",
+          "goals": 1
+        },
+        {
+          "name": "Raúl Jiménez",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
