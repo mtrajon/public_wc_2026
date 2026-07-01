@@ -52,7 +52,7 @@
   th { color:var(--muted); background:rgba(255,255,255,.03); }
   td.num { text-align:center; width:40px; }
   .day-title { color:var(--accent); font-weight:700; margin:12px 6px 8px; font-size:18px; }
-  .match-card { display:grid; grid-template-columns:2.5fr 1fr 140px; gap:12px; align-items:center; background:var(--panel2); border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:14px; margin:8px 0; transition: transform 0.15s ease, box-shadow 0.15s ease; position: relative; overflow: hidden;}
+  .match-card { display:grid; grid-template-columns:2.5fr 1fr 140px; gap:12px; align-items:center; background:var(--panel2); border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:14px; margin:8px 0; transition: transform 0.15s ease, box-shadow 0.15s ease; position: relative; overflow: hidden;border-left: 3px solid rgba(255,255,255,0.06);}
   .match-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.35);}
   .match-card::before { content: ""; position: absolute; left: 0; top: 0; width: 4px; height: 100%; background: var(--group-color, #26c6ff); opacity: 0.8;}
   .match-card.highlight { border:2px solid #00e5c7; background:var(--highlight); }
@@ -60,7 +60,7 @@
   .title { font-size:18px; font-weight:700; }
   .meta { color:var(--muted); font-size:13px; line-height:1.5; margin-top:6px; }
   .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
-  .chip { padding:5px 9px; border-radius:999px; border:1px solid var(--border); font-size:12px; background:rgba(255,255,255,.04); }
+  .chip {  padding: 5px 9px;  border-radius: 999px;  border: 1px solid var(--border);  font-size: 11px;  background: rgba(255,255,255,.06);  font-weight: 600;}
   .score-box {  display: flex;  flex-direction: column;  gap: 4px;}
   .score-box input { width:55px !important; text-align:center; padding:6px; background:#081321; color:var(--text); border:1px solid var(--border); border-radius:10px; font-size:16px; }
   /*.fav-btn { background:transparent; color:var(--star); border:none; font-size:26px; cursor:pointer; }*/
@@ -1328,7 +1328,7 @@ function renderFixtures() {
         }
       }
 
-      titleHtml = `${homeName} vs ${awayName}`;
+      titleHtml = `${homeName} <span style="opacity:0.5;">vs</span> ${awayName}`;
 
     } 
     // ✅ KNOCKOUT
@@ -1727,8 +1727,6 @@ async function loadSharedScores() {
     alert('❌ Failed to load shared scores');
   }
 }
-
-
 //render();
 </script>
 </body>
