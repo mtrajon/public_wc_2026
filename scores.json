@@ -1374,10 +1374,15 @@
     }
   },
   "m80": {
-    "home": "",
+    "home": "2",
     "away": "1",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Harry Kane",
+          "goals": 2
+        }
+      ],
       "away": [
         {
           "name": "Brian Cipenga",
