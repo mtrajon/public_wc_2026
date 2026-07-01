@@ -1198,7 +1198,11 @@ function resolveKnockoutPairings() {
   const match = MATCHES.find(function(m) { return m.id === matchId; });
   if (!match) return 'Winner ' + matchId.replace('m', 'Match ');
 
-  const pairing = resolved[matchId] || match.pairing || '';
+  const pairing =
+  KNOCKOUT_OVERRIDES[matchId] ||
+  resolved[matchId] ||
+  match.pairing ||
+  '';
   const teams = splitResolvedPairing(pairing);
 
   if (!scoreComplete(matchId)) {
