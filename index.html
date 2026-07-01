@@ -397,9 +397,68 @@
   margin-bottom: 4px;
 }
 
-
-
 .flag{width:20px;height:14px;margin-right:6px;vertical-align:middle;}
+
+/* ✅ Finished match stage colors */
+
+.match-card.match-complete.stage-r32 {
+  border-color: #3b82f6;   /* blue */
+  background: rgba(59,130,246,0.12);
+}
+
+.match-card.match-complete.stage-r16 {
+  border-color: #22c55e;   /* green */
+  background: rgba(34,197,94,0.12);
+}
+
+.match-card.match-complete.stage-qf {
+  border-color: #eab308;   /* yellow */
+  background: rgba(234,179,8,0.12);
+}
+
+.match-card.match-complete.stage-sf {
+  border-color: #a855f7;   /* purple */
+  background: rgba(168,85,247,0.12);
+}
+
+.match-card.match-complete.stage-final {
+  border-color: #ffd36a;   /* gold */
+  background: rgba(255,211,106,0.18);
+}
+
+/* ✅ Knockout bracket stage colors (when finished) */
+
+.match-box.stage-r32.match-winner {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59,130,246,0.25);
+}
+
+.match-box.stage-r16.match-winner {
+  border-color: #22c55e;
+  box-shadow: 0 0 8px rgba(34,197,94,0.25);
+}
+
+.match-box.stage-qf.match-winner {
+  border-color: #eab308;
+  box-shadow: 0 0 8px rgba(234,179,8,0.25);
+}
+
+.match-box.stage-sf.match-winner {
+  border-color: #a855f7;
+  box-shadow: 0 0 8px rgba(168,85,247,0.25);
+}
+
+.match-box.stage-final.match-winner {
+  border-color: #ffd36a;
+  box-shadow: 0 0 10px rgba(255,211,106,0.4);
+}
+/* ✅ Group stage finished color */
+
+.match-card.match-complete.stage-group {
+  border-color: #26c6ff;   /* your main accent blue */
+  background: rgba(38,198,255,0.12);
+}
+
 </style>
 </head>
 <body>
@@ -1280,7 +1339,12 @@ function renderFixtures() {
 
     const card = document.createElement('div');
     card.className = 'match-card ' + highlightClass(match);
-
+    if (match.stage === "Group") card.classList.add("stage-group");
+    if (match.stage === "Round of 32") card.classList.add("stage-r32");
+    if (match.stage === "Round of 16") card.classList.add("stage-r16");
+    if (match.stage === "Quarter-final") card.classList.add("stage-qf");
+    if (match.stage === "Semi-final") card.classList.add("stage-sf");
+    if (match.stage === "Final") card.classList.add("stage-final");
     const tz = document.getElementById('timezoneSelect').value;
 
     function getLocalDateString(dateStr) {
@@ -1524,7 +1588,13 @@ if (order && Array.isArray(order)) {
 
 matches.forEach(function(match) {
       const card = document.createElement('div');
-      let className = 'match-box';
+let className = 'match-box';
+
+if (match.stage === "Round of 32") className += " stage-r32";
+if (match.stage === "Round of 16") className += " stage-r16";
+if (match.stage === "Quarter-final") className += " stage-qf";
+if (match.stage === "Semi-final") className += " stage-sf";
+if (match.stage === "Final") className += " stage-final";
 
       const title = match.id.replace('m', 'Match ');
         
