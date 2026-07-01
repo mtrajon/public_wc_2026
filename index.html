@@ -1290,6 +1290,14 @@ function renderFixtures() {
 
     let titleHtml = '';
 
+    const now = new Date();
+const kickoff = new Date(match.kickoff);
+
+const isLive =
+  now >= kickoff &&
+  now <= new Date(kickoff.getTime() + 2 * 60 * 60 * 1000) &&
+  !scoreComplete(match.id);
+
     // ✅ GROUP STAGE
     if (match.stage === 'Group') {
 
@@ -1328,7 +1336,11 @@ function renderFixtures() {
         }
       }
 
-      titleHtml = `${homeName} <span style="opacity:0.5;">vs</span> ${awayName}`;
+      titleHtml = `
+  ${isLive ? '<span style="color:#ff4d4d; font-weight:700; margin-right:6px;">LIVE</span>' : ''}
+  ${homeName} <span style="opacity:0.5;">vs</span> ${awayName}
+`;
+
 
     } 
     // ✅ KNOCKOUT
@@ -1383,7 +1395,11 @@ function renderFixtures() {
         }
       }
 
-      titleHtml = `${match.id.replace('m', 'Match ')} · ${team1}${team2 ? ' vs ' + team2 : ''}`;
+      titleHtml = `
+  ${isLive ? '<span style="color:#ff4d4d; font-weight:700; margin-right:6px;">LIVE</span>' : ''}
+  ${match.id.replace('m', 'Match ')} · ${team1}${team2 ? ' vs ' + team2 : ''}
+`;
+
     }
 
     const chips = [`<span class="chip">${match.stage}</span>`];
