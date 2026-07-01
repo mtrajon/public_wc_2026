@@ -1375,10 +1375,15 @@
   },
   "m80": {
     "home": "",
-    "away": "",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Brian Cipenga",
+          "goals": 1
+        }
+      ]
     }
   },
   "m76": {
@@ -1464,6 +1469,10 @@
       "away": [
         {
           "name": "Erling Haaland",
+          "goals": 1
+        },
+        {
+          "name": "Antonio Nusa",
           "goals": 1
         }
       ]
