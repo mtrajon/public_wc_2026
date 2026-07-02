@@ -1434,11 +1434,29 @@
     "penAway": "3"
   },
   "m82": {
-    "home": "",
-    "away": "",
+    "home": "3",
+    "away": "2",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Romelu Lukaku",
+          "goals": 1
+        },
+        {
+          "name": "Youri Tielemans",
+          "goals": 2
+        }
+      ],
+      "away": [
+        {
+          "name": "Habib Diarra",
+          "goals": 1
+        },
+        {
+          "name": "Ismaïla Sarr",
+          "goals": 1
+        }
+      ]
     }
   },
   "m74": {
@@ -1518,10 +1536,19 @@
     }
   },
   "m81": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Folarin Balogun",
+          "goals": 1
+        },
+        {
+          "name": "Malik Tillman",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
