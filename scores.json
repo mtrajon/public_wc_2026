@@ -1570,11 +1570,25 @@
     }
   },
   "m83": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Cristiano Ronaldo",
+          "goals": 1
+        },
+        {
+          "name": "Gonçalo Ramos",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Ivan Perišić",
+          "goals": 1
+        }
+      ]
     }
   },
   "m85": {
