@@ -1600,18 +1600,34 @@
     }
   },
   "m88": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
-    }
+      "away": [
+        {
+          "name": "Emam Ashour",
+          "goals": 1
+        }
+      ]
+    },
+    "penHome": "2",
+    "penAway": "4"
   },
   "m87": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Breel Embolo",
+          "goals": 1
+        },
+        {
+          "name": "Dan Ndoye",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
