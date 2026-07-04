@@ -1656,23 +1656,32 @@
   },
   "m90": {
     "home": "0",
-    "away": "2",
+    "away": "3",
     "scorers": {
       "home": [],
       "away": [
         {
           "name": "Azzedine Ounahi",
           "goals": 2
+        },
+        {
+          "name": "Soufiane Rahimi",
+          "goals": 1
         }
       ]
     }
   },
   "m89": {
     "home": "",
-    "away": "",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Kylian Mbappé",
+          "goals": 1
+        }
+      ]
     }
   },
   "m91": {
