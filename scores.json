@@ -1686,13 +1686,13 @@
   },
   "m91": {
     "home": "0",
-    "away": "1",
+    "away": "2",
     "scorers": {
       "home": [],
       "away": [
         {
           "name": "Erling Haaland",
-          "goals": 1
+          "goals": 2
         }
       ]
     }
