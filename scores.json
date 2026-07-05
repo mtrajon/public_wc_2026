@@ -1685,11 +1685,16 @@
     }
   },
   "m91": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Erling Haaland",
+          "goals": 1
+        }
+      ]
     }
   },
   "m92": {
@@ -1787,7 +1792,7 @@
       "home": [],
       "away": []
     }
-  }, 
+  },
   "m104": {
     "home": "",
     "away": "",
