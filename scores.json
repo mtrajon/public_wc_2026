@@ -1703,11 +1703,29 @@
     }
   },
   "m92": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "3",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Julián Quiñones",
+          "goals": 1
+        },
+        {
+          "name": "Raúl Jiménez",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Jude Bellingham",
+          "goals": 2
+        },
+        {
+          "name": "Harry Kane",
+          "goals": 1
+        }
+      ]
     }
   },
   "m93": {
