@@ -1769,10 +1769,15 @@
   },
   "m95": {
     "home": "",
-    "away": "",
+    "away": "1",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Yasser Ibrahim",
+          "goals": 1
+        }
+      ]
     }
   },
   "m96": {
