@@ -1742,11 +1742,25 @@
     }
   },
   "m94": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "3",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Malik Tillman",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Charles De Ketelaere",
+          "goals": 2
+        },
+        {
+          "name": "Hans Vanaken",
+          "goals": 1
+        }
+      ]
     }
   },
   "m95": {
