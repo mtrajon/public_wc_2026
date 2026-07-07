@@ -1743,7 +1743,7 @@
   },
   "m94": {
     "home": "1",
-    "away": "3",
+    "away": "4",
     "scorers": {
       "home": [
         {
@@ -1758,6 +1758,10 @@
         },
         {
           "name": "Hans Vanaken",
+          "goals": 1
+        },
+        {
+          "name": "Romelu Lukaku",
           "goals": 1
         }
       ]
