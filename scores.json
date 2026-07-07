@@ -1768,13 +1768,30 @@
     }
   },
   "m95": {
-    "home": "",
-    "away": "1",
+    "home": "3",
+    "away": "2",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Cristian Romero",
+          "goals": 1
+        },
+        {
+          "name": "Lionel Messi",
+          "goals": 1
+        },
+        {
+          "name": "Enzo Fernández",
+          "goals": 1
+        }
+      ],
       "away": [
         {
           "name": "Yasser Ibrahim",
+          "goals": 1
+        },
+        {
+          "name": "Mostafa Ziko",
           "goals": 1
         }
       ]
