@@ -1798,12 +1798,14 @@
     }
   },
   "m96": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "0",
     "scorers": {
       "home": [],
       "away": []
-    }
+    },
+    "penHome": "3",
+    "penAway": "4"
   },
   "m97": {
     "home": "",
