@@ -1808,10 +1808,19 @@
     "penAway": "4"
   },
   "m97": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Kylian Mbappé",
+          "goals": 1
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
