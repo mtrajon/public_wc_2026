@@ -1825,11 +1825,25 @@
     }
   },
   "m98": {
-    "home": "",
-    "away": "",
+    "home": "2",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Fabián Ruiz",
+          "goals": 1
+        },
+        {
+          "name": "Mikel Merino",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Charles De Ketelaere",
+          "goals": 1
+        }
+      ]
     }
   },
   "m99": {
