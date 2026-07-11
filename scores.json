@@ -1848,7 +1848,7 @@
   },
   "m99": {
     "home": "1",
-    "away": "1",
+    "away": "2",
     "scorers": {
       "home": [
         {
@@ -1859,7 +1859,7 @@
       "away": [
         {
           "name": "Jude Bellingham",
-          "goals": 1
+          "goals": 2
         }
       ]
     }
