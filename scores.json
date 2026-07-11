@@ -1847,11 +1847,21 @@
     }
   },
   "m99": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "1",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Andreas Schjelderup",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Jude Bellingham",
+          "goals": 1
+        }
+      ]
     }
   },
   "m100": {
