@@ -1866,7 +1866,7 @@
   },
   "m100": {
     "home": "1",
-    "away": "0",
+    "away": "1",
     "scorers": {
       "home": [
         {
@@ -1874,7 +1874,12 @@
           "goals": 1
         }
       ],
-      "away": []
+      "away": [
+        {
+          "name": "Dan Ndoye",
+          "goals": 1
+        }
+      ]
     }
   },
   "m101": {
