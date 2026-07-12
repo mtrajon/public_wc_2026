@@ -1865,12 +1865,16 @@
     }
   },
   "m100": {
-    "home": "1",
+    "home": "2",
     "away": "1",
     "scorers": {
       "home": [
         {
           "name": "Alexis Mac Allister",
+          "goals": 1
+        },
+        {
+          "name": "Julián Álvarez",
           "goals": 1
         }
       ],
