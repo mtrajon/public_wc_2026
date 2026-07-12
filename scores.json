@@ -1865,10 +1865,15 @@
     }
   },
   "m100": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "0",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Alexis Mac Allister",
+          "goals": 1
+        }
+      ],
       "away": []
     }
   },
