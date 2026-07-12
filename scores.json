@@ -1865,7 +1865,7 @@
     }
   },
   "m100": {
-    "home": "2",
+    "home": "3",
     "away": "1",
     "scorers": {
       "home": [
@@ -1875,6 +1875,10 @@
         },
         {
           "name": "Julián Álvarez",
+          "goals": 1
+        },
+        {
+          "name": "Lautaro Martínez",
           "goals": 1
         }
       ],
