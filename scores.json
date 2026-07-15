@@ -1908,11 +1908,25 @@
     }
   },
   "m102": {
-    "home": "",
-    "away": "",
+    "home": "1",
+    "away": "2",
     "scorers": {
-      "home": [],
-      "away": []
+      "home": [
+        {
+          "name": "Anthony Gordon",
+          "goals": 1
+        }
+      ],
+      "away": [
+        {
+          "name": "Enzo Fernández",
+          "goals": 1
+        },
+        {
+          "name": "Lautaro Martínez",
+          "goals": 1
+        }
+      ]
     }
   },
   "m103": {
