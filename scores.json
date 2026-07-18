@@ -1930,10 +1930,23 @@
     }
   },
   "m103": {
-    "home": "0",
-    "away": "2",
+    "home": "4",
+    "away": "6",
     "scorers": {
-      "home": [],
+      "home": [
+        {
+          "name": "Kylian Mbappé",
+          "goals": 2
+        },
+        {
+          "name": "Bradley Barcola",
+          "goals": 1
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "goals": 1
+        }
+      ],
       "away": [
         {
           "name": "Declan Rice",
@@ -1941,6 +1954,14 @@
         },
         {
           "name": "Ezri Konsa",
+          "goals": 1
+        },
+        {
+          "name": "Bukayo Saka",
+          "goals": 3
+        },
+        {
+          "name": "Jude Bellingham",
           "goals": 1
         }
       ]
