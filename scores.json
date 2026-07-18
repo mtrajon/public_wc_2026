@@ -1930,11 +1930,20 @@
     }
   },
   "m103": {
-    "home": "",
-    "away": "",
+    "home": "0",
+    "away": "2",
     "scorers": {
       "home": [],
-      "away": []
+      "away": [
+        {
+          "name": "Declan Rice",
+          "goals": 1
+        },
+        {
+          "name": "Ezri Konsa",
+          "goals": 1
+        }
+      ]
     }
   },
   "m104": {
