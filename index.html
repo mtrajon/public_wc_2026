@@ -726,10 +726,25 @@ function renderTournamentStats() {
     totalGoals += total;
     matchesPlayed++;
 
-    if (total > highestGoals) {
-      highestGoals = total;
-      highestMatch = `${match.home} ${home}-${away} ${match.away}`;
-    }
+if (total > highestGoals) {
+  highestGoals = total;
+
+  if (match.home && match.away) {
+
+    // Group matches
+    highestMatch =
+      `${match.home} ${home}-${away} ${match.away}`;
+
+  } else {
+
+    // Knockout matches (including Third Place Playoff)
+    const resolved = resolveKnockoutPairings();
+
+    highestMatch =
+      `${resolved[match.id] || match.pairing} (${home}-${away})`;
+
+  }
+}
   });
 
   const avg = matchesPlayed
